@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alibaba - Cálculo CBM y Costos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de CBM y Costos</h1>
+    
+    <label>Medida 1 (cm):</label>
+    <input type="number" id="medida1" placeholder="Ej: 50">
+
+    <label>Medida 2 (cm):</label>
+    <input type="number" id="medida2" placeholder="Ej: 50">
+
+    <label>Medida 3 (cm):</label>
+    <input type="number" id="medida3" placeholder="Ej: 50">
+
+    <label>Valor por metro cúbico (COP):</label>
+    <input type="number" id="valorCBM" placeholder="Ej: 2400000">
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultados">
+      <p><strong>CBM:</strong> <span id="cbm"></span> m³</p>
+      <p><strong>Esto te cuesta la traída de la mercancía con impuestos y nacionalización:</strong></p>
+      <p class="resultado"><span id="costo"></span> COP</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
